@@ -3,21 +3,21 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Task2;
 
-public class EqualityComparer<T> :
-    IEqualityComparer<T>
+public class EqualityComparer :
+    IEqualityComparer<int>
 {
-    private static EqualityComparer<T>? _instance;
+    private static EqualityComparer? _instance;
 
     public EqualityComparer()
     {
 
     }
 
-    public static EqualityComparer<T> Instance => _instance ??= new EqualityComparer<T>();
-    public bool Equals(T x, T y) => Equals(x, y);
+    public static EqualityComparer Instance => _instance ??= new EqualityComparer();
+    public bool Equals(int x, int y) => x == y;
    
 
-    public int GetHashCode(T obj)
+    public int GetHashCode(int obj)
     {
         return obj.GetHashCode();
     }

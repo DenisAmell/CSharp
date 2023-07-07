@@ -9,7 +9,8 @@ namespace Task2;
 
 public static class EnumerableMethod
 { 
-    public static IEnumerable<IEnumerable<T>> GetCombinations<T>( this IEnumerable<T> list, int length, EqualityComparer<T> comparer)
+    public static IEnumerable<IEnumerable<T>> GetCombinations<T>(this IEnumerable<T> list, int length,
+        IEqualityComparer<T> comparer)
      {
         if (list.Distinct(comparer).Count() != list.Count())
             throw new ArgumentException("Values are repeated", nameof(list));
@@ -20,7 +21,7 @@ public static class EnumerableMethod
              .SelectMany(t => list, (t1, t2) => t1.Concat(new T[] { t2 }));
      }
 
-    public static IEnumerable<IEnumerable<T>> GenSubset<T>(this IEnumerable<T> list, EqualityComparer<T> comparer)
+    public static IEnumerable<IEnumerable<T>> GenSubset<T>(this IEnumerable<T> list, IEqualityComparer<T> comparer)
     {
         if (list.Distinct(comparer).Count() != list.Count())
             throw new ArgumentException("Values are repeated", nameof(list));
@@ -47,7 +48,7 @@ public static class EnumerableMethod
         }
     }
 
-    public static IEnumerable<IEnumerable<T>> GetPermutations<T>(this IEnumerable<T> list, EqualityComparer<T> comparer)
+    public static IEnumerable<IEnumerable<T>> GetPermutations<T>(this IEnumerable<T> list, IEqualityComparer<T> comparer)
     {
         //  comparer = comparer ?? EqualityComparer<T>.Default;
         if (list.Distinct(comparer).Count() != list.Count())
