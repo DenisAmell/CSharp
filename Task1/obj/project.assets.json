@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Denis\\OneDrive\\Рабочий стол\\Practika\\Task1\\Task1.csproj",
+      "projectUniqueName": "C:\\Users\\Denis\\OneDrive\\Рабочий стол\\Practika\\CSharp\\Task1\\Task1.csproj",
       "projectName": "Task1",
-      "projectPath": "C:\\Users\\Denis\\OneDrive\\Рабочий стол\\Practika\\Task1\\Task1.csproj",
+      "projectPath": "C:\\Users\\Denis\\OneDrive\\Рабочий стол\\Practika\\CSharp\\Task1\\Task1.csproj",
       "packagesPath": "C:\\Users\\Denis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Denis\\OneDrive\\Рабочий стол\\Practika\\Task1\\obj\\",
+      "outputPath": "C:\\Users\\Denis\\OneDrive\\Рабочий стол\\Practika\\CSharp\\Task1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Denis\\AppData\\Roaming\\NuGet\\NuGet.Config",

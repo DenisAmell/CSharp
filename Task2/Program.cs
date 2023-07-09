@@ -1,20 +1,22 @@
 ﻿using Task2;
 
 namespace Task2.Launcher.App
-{   class Programm
+{
+    class Programm
     {
         static void Main(string[] args)
         {
             try
             {
-                var res = new int[] { 1,1,2,2 }.GetPermutations(EqualityComparer.Instance);
+                var res = new int[] { 1, 1, 2, 2 }.GetPermutations(EqualityComparer.Instance);
                 foreach (var set in res)
                 {
                     Console.WriteLine($"[{string.Join(", ", set.Select(x => x.ToString()))}]");
                 }
-            } catch (ArgumentException ex) 
+            }
+            catch (ArgumentException ex)
             {
-                Console.WriteLine(ex.Message);            
+                Console.WriteLine(ex.Message);
             }
         }
     }

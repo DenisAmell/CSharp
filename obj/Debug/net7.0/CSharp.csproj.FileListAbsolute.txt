@@ -1,0 +1,5 @@
+C:\Users\Denis\OneDrive\Рабочий стол\Practika\CSharp\obj\Debug\net7.0\CSharp.csproj.AssemblyReference.cache
+C:\Users\Denis\OneDrive\Рабочий стол\Practika\CSharp\obj\Debug\net7.0\CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Denis\OneDrive\Рабочий стол\Practika\CSharp\obj\Debug\net7.0\CSharp.AssemblyInfoInputs.cache
+C:\Users\Denis\OneDrive\Рабочий стол\Practika\CSharp\obj\Debug\net7.0\CSharp.AssemblyInfo.cs
+C:\Users\Denis\OneDrive\Рабочий стол\Practika\CSharp\obj\Debug\net7.0\CSharp.csproj.CoreCompileInputs.cache
